@@ -1,4 +1,4 @@
-package com.hiber.demo.Hibernate_first_project.model;
+package com.hiber.demo.Hibernate_first_project;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

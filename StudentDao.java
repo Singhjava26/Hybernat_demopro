@@ -1,8 +1,7 @@
-package com.hiber.demo.Hibernate_first_project.dao;
+package com.hiber.demo.Hibernate_first_project;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import com.hiber.demo.Hibernate_first_project.model.Student;
 import com.hiber.demo.Hibernate_first_project.util.HibernateUtil;
 
