@@ -1,4 +1,4 @@
-package com.hiber.demo.Hibernate_first_project.util;
+package com.hiber.demo.Hibernate_first_project;
 
 import java.util.Properties;
 
