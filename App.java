@@ -1,32 +1,29 @@
-package com.hiber.demo.Hibernate_first_project;
+package com.hibernate.MCU;
 
-import com.hiber.demo.Hibernate_first_project.dao.StudentDao;
-import com.hiber.demo.Hibernate_first_project.model.Student;
-/**
- * Hello world!
- *
- */
+import com.hibernate.MCU.dao.Marvel_Library_dao;
+import com.hibernate.MCU.model.Marvel;
+
 public class App 
 {
     public static void main( String[] args )
     {
+    	Marvel_Library_dao  Mrldao= new Marvel_Library_dao();
+    	Marvel lib=new Marvel("Iron Men","Mark-52");
+        Mrldao.saveMarvel(lib);
         
-    	StudentDao studentdao=new StudentDao();
+        Marvel lib1=new Marvel("Odin","Stombrekar");
+        Mrldao.saveMarvel(lib1);
         
-        Student student=new Student("Priti", "Yadav", "PY@gmail.com");
-        studentdao.saveStudent(student);
-        Student student1=new Student("Neha", "Vishwakarma", "NY@gmail.com");
-        studentdao.saveStudent(student1);
+        Marvel lib2=new Marvel("Shang-Chi","Ten-Rings");
+        Mrldao.saveMarvel(lib2);
         
-        student1.setFname("Nisha");
-        studentdao.updateStudent(student1);
+        lib1.setNmae("THOR");
+        Mrldao.updateMarvel(lib1);
         
-        studentdao.getStudentById(1);
-        studentdao.deleteStudent(1);
-        
-        studentdao.getStudentById(1);
-        
-        
-     
-    }
+        //libdao.deleteMarvel(2);
+        Mrldao.getMarvelById(1);
+        Mrldao.getMarvelById(2);
+        Mrldao.getMarvelById(3);
+    } 
 }
+
